@@ -18,7 +18,7 @@ class ActionTimestamp(
 }
 
 val ATTACK_ANIMATIONS = listOf(
-    "attack", "attack_left", "attack_swim", "attack_swim_left"
+    "attack", "attack_left", "attack_swim", "attack_swim_left", "attack_main"
 )
 
 fun Animation.getEvents(): JSONArray {
