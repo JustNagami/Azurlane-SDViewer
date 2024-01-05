@@ -88,7 +88,8 @@ class ALSDViewerUI: View("碧蓝SD小人浏览器") {
         "attack" to ActionTimestamp("attack"),
         "attack_left" to ActionTimestamp("attack_left"),
         "attack_swim" to ActionTimestamp("attack_swim"),
-        "attack_swim_left" to ActionTimestamp("attack_swim_left")
+        "attack_swim_left" to ActionTimestamp("attack_swim_left"),
+        "attack_main" to ActionTimestamp("attack_main")
     )
 
     val actionTimestampList: ObservableList<ActionTimestamp> =
