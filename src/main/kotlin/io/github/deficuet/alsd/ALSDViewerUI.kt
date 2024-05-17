@@ -10,6 +10,7 @@ import javafx.collections.FXCollections
 import javafx.collections.ObservableList
 import javafx.event.Event
 import javafx.event.EventTarget
+import javafx.geometry.Insets
 import javafx.geometry.Orientation
 import javafx.geometry.Pos
 import javafx.scene.Node
@@ -212,12 +213,12 @@ class ALSDViewerUI: View("碧蓝SD小人浏览器") {
         }.also { controls.add(it) }
         //endregion
         separator {
-            vboxConstraints { marginTop = 12.0; marginLeft = 16.0; marginRight = 16.0 }
+            vboxConstraints { margin = Insets(12.0, 16.0, 8.0, 16.0) }
         }
         //region 动画管理
         vbox {
             vboxConstraints {
-                marginTop = 12.0; marginLeft = 16.0; marginRight = 16.0
+                marginLeft = 16.0; marginRight = 16.0
             }
             label("动画列表：")
             animationListView = listview(animationList) {
@@ -240,8 +241,7 @@ class ALSDViewerUI: View("碧蓝SD小人浏览器") {
         //endregion
         separator {
             vboxConstraints {
-                marginTop = 12.0; marginBottom = 12.0
-                marginLeft = 16.0; marginRight = 16.0
+                margin = Insets(12.0, 16.0, 8.0, 16.0)
             }
         }
         //region 动画录制
@@ -277,8 +277,7 @@ class ALSDViewerUI: View("碧蓝SD小人浏览器") {
         //endregion
         separator {
             vboxConstraints {
-                marginTop = 12.0; marginBottom = 12.0
-                marginLeft = 16.0; marginRight = 16.0
+                margin = Insets(12.0, 16.0, 8.0, 16.0)
             }
         }
         //region 攻击动作分析
